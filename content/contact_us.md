@@ -1,6 +1,6 @@
 ---
 title: "Contact us"
-draft: true
+draft: false
 weight: 30
 ---
 

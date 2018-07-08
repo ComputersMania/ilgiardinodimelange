@@ -1,0 +1,19 @@
+language: go
+
+go:
+  - master
+
+install:
+  - go get github.com/spf13/hugo
+
+script:
+  - hugo
+
+deploy:
+  provider: firebase
+  token:
+    secure: "CZUt/qPF8UVbpXiftlXwnnzRdVNLXLP8DWRtYchYzVwJDZa/tEqGKsWytzZyQz0wUdOzPQok7WfdA6ZNprPoZowj6BtYEX2zHAGa8AeCTeI0N5cuZolVuvTmwuo9CWhHylnj1xpwbuxnG4GLpW3pOX4XF9q
+xJN3/cD4IOslT4J6DesHVcWvDd+zCFEpfkvATUKTjhY9TxKUQBbpuNq5wkZdp0NXDwTMAKMszYyRYxOIyA7cTdamsgqx6iGHAFhqKuPfsaZWAZqCgXNqyvA2vcb9hcmtRDL2X22+LpHf4xtN3hFCj+kcp+30nqjvNMcqB6
+myV1wpaPL7l6064beueg7+WjMSFkQoU53asL6OfjS329qXLbBfaNy0PcTer5ooA5IPPrrGPHXrFqAQh4925ljLslXzlzv08R6P5Gn5HaavJ4DlrStC/2QSG9Hu/jEvO8aPcf+PcpOvTIiSepSpN/hvPQRHYwzQYl2EaevB
+KFby5PaurWKNA2CmLuh/F/s96IO8wHC/+3yAq/xt1tTcJ8TRXHc9pBUpBQjOvSGZ6OCDOyvkte/Vrsv7YAIwFKi7sdlwkZk6symMzZq1iz2QpnqQ+dkaGZ+jsawqQcq8utpzHTzwU9n/ToZpCuVlB0Ru7egHzkWYUhSW4U
+njXSlmYu06MVFbBiUlLvyIYomIbFuY="

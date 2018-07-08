@@ -1,6 +1,6 @@
 ---
 title: "Rooms"
-draft: true
+draft: false
 weight: 20
 ---
 
