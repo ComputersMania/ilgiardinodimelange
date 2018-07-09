@@ -20,9 +20,6 @@ deploy:
       version: "10.4.1"
     - wercker/npm-install@2.0.1:
       options: "-g firebase-tools"
-    # - script:
-    #   name: Install firebase
-    #   code: npm install -g firebase-tools
     - script:
       name: Deploy
       code: firebase deploy --token "$FIREBASE_TOKEN"
