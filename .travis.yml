@@ -11,6 +11,7 @@ script:
 
 deploy:
   provider: firebase
+  local_dir: public
   token:
     secure: "CZUt/qPF8UVbpXiftlXwnnzRdVNLXLP8DWRtYchYzVwJDZa/tEqGKsWytzZyQz0wUdOzPQok7WfdA6ZNprPoZowj6BtYEX2zHAGa8AeCTeI0N5cuZolVuvTmwuo9CWhHylnj1xpwbuxnG4GLpW3pOX4XF9q
 xJN3/cD4IOslT4J6DesHVcWvDd+zCFEpfkvATUKTjhY9TxKUQBbpuNq5wkZdp0NXDwTMAKMszYyRYxOIyA7cTdamsgqx6iGHAFhqKuPfsaZWAZqCgXNqyvA2vcb9hcmtRDL2X22+LpHf4xtN3hFCj+kcp+30nqjvNMcqB6
