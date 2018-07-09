@@ -2,6 +2,9 @@ baseURL = "https://ilgiardinodimelange-3fa28.firebaseapp.com/"
 languageCode = "en-us"
 title = "Il giardino di melange"
 theme = "dimension"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 [params]
   description = "Affittacamere"
   copyright = "Ilgiardinodimelange"
