@@ -41,3 +41,9 @@ build:
         name: Compile site
         code: |
           hugo
+
+deploy:
+  steps:
+    - devillexio/wercker-firebase-deploy-step:
+      project: $FIREBASE_PROJECT_NAME
+      token: $FIREBASE_TOKEN
