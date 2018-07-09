@@ -1,21 +1,5 @@
-# This references the default golang container from
-# the Docker Hub: https://registry.hub.docker.com/u/library/golang/
-# If you want Google's container you would reference google/golang
-# Read more about containers on our dev center
-# http://devcenter.wercker.com/docs/containers/index.html
 box: golang
-# This is the build pipeline. Pipelines are the core of wercker
-# Read more about pipelines on our dev center
-# http://devcenter.wercker.com/docs/pipelines/index.html
 
-# You can also use services such as databases. Read more on our dev center:
-# http://devcenter.wercker.com/docs/services/index.html
-# services:
-    # - postgres
-    # http://devcenter.wercker.com/docs/services/postgresql.html
-
-    # - mongo
-    # http://devcenter.wercker.com/docs/services/mongodb.html
 build:
   # The steps that will be executed on build
   # Steps make up the actions in your pipeline
@@ -34,9 +18,11 @@ deploy:
   steps:
     - bigtruedata/node-install@1.1.0:
       version: "10.4.1"
-    - script:
-      name: Install firebase
-      code: npm install -g firebase-tools
+    - wercker/npm-install@2.0.1:
+      options: "-g firebase-tools"
+    # - script:
+    #   name: Install firebase
+    #   code: npm install -g firebase-tools
     - script:
       name: Deploy
       code: firebase deploy --token "$FIREBASE_TOKEN"
