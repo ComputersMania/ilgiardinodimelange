@@ -1,6 +1,7 @@
 baseURL = "https://ilgiardinodimelange-3fa28.firebaseapp.com/"
 languageCode = "en-us"
 title = "Il giardino di melange"
+ googleAnalytics =  "UA-66005915-1"
 theme = "dimension"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
