@@ -10,7 +10,7 @@ build:
       name: Initialize git submodules
       code: |
             git submodule update --init --recursive
-    - arjen/hugo-build@2.2.1:
+    - arjen/hugo-build:
       version: "0.42.2"
       theme: "dimension"
 
